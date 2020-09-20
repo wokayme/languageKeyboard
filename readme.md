@@ -42,6 +42,7 @@ Example:
 
 `timeout`:'number' - Time needed to hold key for start replacing letter (by default `500`)
 `interval`:'number' - Time needed to swipe replace letter options (by default `500`
+`addPutLetterToOptions`:'boolean' - Add clicked letter to option of replacment (by default `true`)
 
 **Example initializate option for Spanish keyboard**
 ```

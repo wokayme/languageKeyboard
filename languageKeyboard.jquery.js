@@ -3,6 +3,7 @@ $.fn.languageKeyboard = function(options) {
     var defaults = {
         timeout: 500,
         interval: 500,
+        addPutLetterToOptions: true,
         replaceLetters: {}
     };
 
@@ -11,6 +12,12 @@ $.fn.languageKeyboard = function(options) {
     var holdTimeout;
     var letterChangeInterval;
     var clickedLetter;
+
+    if(settings.addPutLetterToOptions){
+        Object.keys(settings.replaceLetters).forEach(letter=>{
+            settings.replaceLetters[letter].push(letter);
+        })
+    }
 
     $(this).on('input',function(){
         holdTimeout = setTimeout(function(){
