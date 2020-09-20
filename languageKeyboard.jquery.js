@@ -32,7 +32,7 @@ $.fn.languageKeyboard = function(options) {
 
         if(hold && settings.replaceLetters[clickedLetter] && !letterChangeInterval){
             var currentIndex = 0;
-            letterChangeInterval = setInterval(()=>{
+            letterChangeInterval = setInterval(function(){
                 e.target.value = value.split('').map(function(letter, index){return index === cursorPosition ? settings.replaceLetters[clickedLetter][currentIndex] : letter}).join('');
                 e.target.selectionStart = cursorPosition+1;
                 e.target.selectionEnd = cursorPosition+1;
