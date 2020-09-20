@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./imported/bootstrap.min.css">
+        <link rel="stylesheet" href="./formProgressBar.css">
+        <script src="./imported/jquery-3.3.1.min.js"></script>
+        <script src="languageKeyboard.jquery.js"></script>
+        <style>
+            form{
+                padding: 40px;
+            }
+        </style>
+    </head>
+    <body>
+    <form>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <h1>Spanish keyboard demo</h1>
+                <label>Put and hold one of this letter "A" "E" "I", "O" "N" "U"</label>
+                <input class="form-control">
+            </div>
+        </div>
+    </form>
+    <script>
+        $("form").languageKeyboard({replaceLetters:{
+            'a': ['á'],
+            'e': ['é'],
+            'i': ['í'],
+            'o': ['ó'],
+            '?': ['¿'],
+            'n': ['ñ'],
+            'u': ['ú','ü'],
+        }});
+    </script>
+    </body>
+</html>
