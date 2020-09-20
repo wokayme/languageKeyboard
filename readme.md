@@ -3,7 +3,7 @@
 -Plugin adding opportunity to use "special" language letters directly from keyboard without changing computer/browser language
 
 # Live Demo
-You can preview this plugin on: ``
+You can preview this plugin on [demo](https://wokayme.github.io/languageKeyboard/)
 
 # Quick Start
 
